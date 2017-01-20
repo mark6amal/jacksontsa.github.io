@@ -68,8 +68,8 @@ margin: 50px auto;
  #slide1, #slide2{ width: 100%; }
  #slide1{
  background:url('../img/Circuitry.jpg') 50% 0 no-repeat fixed;
- color: #afb1b5;
- height: 600px;
+ color: #fff;
+ height: 500px;
  margin: 0;
  padding: 200px 0 260px 0;
  background-size: cover;
@@ -77,10 +77,10 @@ margin: 50px auto;
  #slide2{
  background-color: #fff;
  color: #333333;
- height: 300px;
+ height: 500px;
  margin: 0 auto;
  overflow: hidden;
- padding: 200px 0;
+ padding: 20px 0;
  }
  #slide3{
  background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
