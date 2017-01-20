@@ -1,0 +1,78 @@
+<DOCTYPE! html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Jackson TSA</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type='text/css'>
+    <script>
+    $(document).ready(function() {
+      $('a[href*=#]').each(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname
+        && this.hash.replace(/#/,'') ) {
+          var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+          var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+           if ($target) {
+             var targetOffset = $target.offset().top;
+             $(this).click(function() {
+   $("#nav li a").removeClass("active");
+   $(this).addClass('active');
+             $('html, body').animate({scrollTop: targetOffset}, 1000);
+             return false;
+           });
+        }
+      }
+    });
+
+    });
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="content">
+        <div id='logo'>
+          <a href=""> Jackson  </a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#slide1" class="active" title"Next Section">CTE at Jackson</a></li>
+            <li><a href="#slide2" title="Next Section">Jackson TSA</a></li>
+            <li><a href="#slide3" title="Next Section">Special Report: Augmented Reality</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="slide1">
+      <div class="content">
+        <div id="STEM_logo"></div>
+        <div id="star"></div>
+        <h2>We embrace</h2>
+        <h1>Career and Technical Education</h1>
+        <div id="divider"></div>
+        <h3>Learn more about our program</h3>
+
+      </div>
+    </div>
+    <div id="slide2">
+      <div class="content">
+        <div class="quotes_container">
+          <h3 class="quotes">"Learning to <strong>lead</strong> in a technical world"</h3>
+          <img src="img/tsa.jpg" align="left"/> <h4 class="source">TSA Motto</h4>
+        </div>
+      </div>
+    </div>
+    <div id="slide3">
+      <div class="content">
+        <div id="AR">
+          <img src="img/ar.png" align="left"/> <h2>The world is changing.</h2>
+          <h4>Augmented reality: What it is and why you should care</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</DOCTYPE!>
