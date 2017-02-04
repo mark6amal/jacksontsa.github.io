@@ -1,3 +1,5 @@
 $(document).ready(function(){     
-    $('.loader').fadeOut('slow', function() { $(this).css({visibility: 'hidden', opacity: 0})});
+    $(window).load(function() {
+	    $(".loader").fadeOut("slow");
+})
 });
