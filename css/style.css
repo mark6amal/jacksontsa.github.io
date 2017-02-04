@@ -12,6 +12,9 @@ height: 100%;
 z-index: 9999;
 background: url('../img/Preloader_3.gif') 50% 50% no-repeat rgb(255,255,255);
 }
+img {
+  background: url('loading.gif') no-repeat;
+}
 h1 {
 font-family: Oswald;
 font-weight: normal;
