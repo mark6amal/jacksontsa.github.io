@@ -1,5 +1,3 @@
-
-$(window).load(function() {
-		// Animate loader off screen
-		$(".loader").fadeOut("slow");;
-	});
+$(document).ready(function(){     
+    $('.loader').fadeOut('slow', function() { $(this).css({visibility: 'hidden', opacity: 0})});
+});
